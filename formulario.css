@@ -1,0 +1,82 @@
+/*todo el cuerpo tendra este estilo de letra, tamaño de margen y el fondo sera de ese color*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3d5ac;
+}
+
+/*titulo centrado y con diseño bonito*/
+h1 {
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+/*forma del formulario, color del borde*/
+form {
+    background-color: #d7fbe4;
+    padding: 40px;
+    border: 1px solid #fab24d;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*tamaño de los bloques*/
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* tipos de respuestas que se tienen que ingresar. texto, telefono y email */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+
+/*ajustes de las opciones quejas, sugerencias, felicitacion*/
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+/*margen entre boton de lado derecho*/
+input[type="radio"] { 
+    margin-right: 5%;
+}
+
+/*margen entre la cajita al lado derecho*/
+input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+/*cajita de enviar el formulario*/
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/*tamaño y color del mensaje de aviso de privacidad */
+p {
+    font-size: 12px;
+    color: #532727a5;
+}
+
+/*acepto la privacidad en letra sin estilo*/
+a {
+    color: #000;
+    text-decoration: none;
+}
+
