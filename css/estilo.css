@@ -1,7 +1,7 @@
 /*h1 django*/
 .titulo{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: red;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ede8e7;
 }
 
 /*p sobre que es django*/
@@ -24,36 +24,67 @@
 
 /*titulo2*/
 .titulo2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ede8e7;
 }
 
 /*tabla de enlaces*/
 .tabla1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    color: blueviolet;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
 }
 
 /*titulo3*/
 .titulo3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ede8e7;
 }
 
 /*titulo4*/
 .titulo4{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: green;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ede8e7;
 }
 
 /*menu*/
-.menu{
-    background-color: rgb(60, 130, 192);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+nav{
+    background-color: #e7e2db;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+
+}
+
+/*estilo para el menu*/
+a {
+    text-decoration: none; 
+    color: #393e42; 
+    font-weight: bold;
 }
 
 /*fondo*/
 body{
-    background-color: aquamarine;
+    background-color: #f3d5ac;
 }
+
+
 

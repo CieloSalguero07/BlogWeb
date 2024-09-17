@@ -1,0 +1,104 @@
+ /* Estilo de la pagina */
+ body {
+    font-family: Arial, sans-serif; 
+    background-color: #b1851427; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #62a0a165; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+}
+
+/* Estilo del título */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilo de las celdas y bordes */
+table, th, td {
+    border: 1px solid #ddd; /* Color de borde más suave */
+}
+
+/* Estilo para el encabezado */
+th {
+    background-color: #5da799; 
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Estilo para las celdas */
+td {
+    background-color: #f9f9f9; /* un color de fondo más claro */
+    text-align: center;
+    padding: 12px;
+}
+
+/* Estilo para las filas  */
+tr:nth-child(even) {
+    background-color: #f2f2f234;
+}
+
+/* Estilo para los enlaces PDF */
+a {
+    text-decoration: none; /* Sin subrayado en el enlace */
+    color: #393e42; /* Color azul para el enlace */
+    font-weight: bold;
+}
+
+/* Estilo del cursor sobre el enlace */
+a:hover {
+    color: #0b7dda; /* Color azul más oscuro al pasar el cursor */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/*menu*/
+nav{
+    background-color: #e7e2db;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+
+}
