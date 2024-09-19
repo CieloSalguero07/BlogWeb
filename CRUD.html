@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD en Django</title>
+    <link rel="stylesheet" href="estilo_crud/estilos.css">
+</head>
+<body>
+    <!--menu-->
+    <center>
+        <nav>
+          <ul>
+              <li><a href="index.html"><b>Inicio</b></a></li>
+              <li><a href="CRUD.html"><b>Crud</b></a></li>
+              <li><a href="formulario.html"><b>Contacto</b></a></li>
+              <li><a href="tabla_pdfs.html"><b>Recursos</b></a></li>
+              <li><a href=""><b>Nosotros</b></a></li>
+  
+          </ul>
+      </nav>
+      </center>
+  <!--fin menu-->
+    <br>
+    <h1 class="titulo">Creación de un CRUD desde cero utilizando Django.</h1>
+    <!--Breve introduccion a la creacion del CRUD-->
+    <p class="contenido">Desarrollar un CRUD en Django es una de las tareas más comunes cuando trabajas en aplicaciones web. En este artículo, te acompañaré paso a paso en el proceso, usando ejemplos prácticos y visuales para que sea más fácil de entender.</p>
+    <!--PRIMER PASO-->
+    <h2 class="subtitulos">Paso 1: Configuración inicial de Django.</h2>
+    <h5 class="subtitulos">1.1 Instalación de Django.</h5>
+    <p class="contenido">Asegúrate de tener instalado Python y luego instala Django usando pip:</p>
+    <!--IMAGEN PASO 1.1-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\1.1.png" alt="">
+    <h5 class="subtitulos">1.2 Crear un proyecto de Django.</h5>
+    <p class="contenido">Crea un nuevo proyecto con el siguiente comando:</p>
+    <!--IMAGEN PASO 1.2-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\1.2.png" alt="">
+    <p class="contenido">Navega dentro del proyecto:</p>
+    <!--IMAGEN PASO 1.3.-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\1.3.png" alt="">
+    <h5 class="subtitulos">1.3 Crear una aplicación.</h5>
+    <p class="contenido">Dentro del proyecto, crea una aplicación donde implementaremos el CRUD. Llamémosla "products":</p>
+    <!--IMAGEN PASO 1.3.1-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\1.3.1.png" alt="">
+    <p class="contenido">Ahora, registra la aplicación en myproject/settings.py:</p>
+    <!--IMAGEN PASO 1.3.2-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\1.3.2.png" alt="">
+    <br>
+    <!--SEGUNDO PASO-->
+    <h2 class="subtitulos">Paso 2: Crear el modelo</h2>
+    <p class="contenido">El modelo define la estructura de la base de datos. Vamos a crear un modelo de "Producto" en products/models.py:</p>
+    <!--IMAGEN PASO 2-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\2.png" alt="">
+    <p class="contenido">Después de definir el modelo, ejecuta las migraciones para crear las tablas en la base de datos:</p>
+    <!--IMAGEN PASO 2.1-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\2.1.png" alt="">
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\2.1.1.png" alt="">
+    <br>
+    <h2 class="subtitulos">Paso 3: Crear vistas para cada operación CRUD</h2>
+    <h5 class="subtitulos">3.1 Crear un formulario</h5>
+    <p class="contenido">Django ofrece un sistema de formularios muy útil. Creamos un formulario en products/forms.py:</p>
+    <!--IMAGEN PASO 3.1-->
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\3.png" alt="">
+    <h5 class="subtitulos">3.2 Crear vistas para las operaciones</h5>
+    <p class="contenido">En products/views.py, implementaremos las vistas basadas en funciones para manejar las operaciones CRUD.</p>
+    <ul>
+        <li>Create (Crear)</li>
+        <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\3.1.png" alt="">
+        <li>Read (Leer)</li>
+        <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\3.2.png" alt="">
+        <li>Update (Actualizar)</li>
+        <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\3.3.png" alt="">
+        <li>Delete (Eliminar)</li>
+        <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\3.4.png" alt="">
+    </ul>
+    <br>
+    <h2 class="subtitulos">Paso 4: Definir URLs</h2>
+    <p class="contenido">En products/urls.py, define las rutas para cada operación:</p>
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\4.png" alt="">
+    <p class="contenido">No olvides incluir este archivo de URLs en el archivo myproject/urls.py principal.</p>
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\4.1.png" alt="">
+    <br>
+    <h2 class="subtitulos">Paso 5: Crear templates para las vistas</h2>
+    <p class="contenido">Django utiliza el sistema de plantillas para generar HTML dinámico. A continuación, algunos ejemplos de templates.</p>
+    <h5 class="subtitulos">5.1 Lista de productos</h5>
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\5.png" alt="">
+    <br>
+    <h2 class="subtitulos">Paso 6: Ejecutar la aplicación</h2>
+    <p class="contenido">Finalmente, ejecuta el servidor de desarrollo:</p>
+    <img src="C:\Users\User\OneDrive\Escritorio\PIA CRUD\img\6.png" alt="">
+    <br><br>
+    <p class="contenido">Abre tu navegador en http://127.0.0.1:8000/products/ y deberías poder interactuar con el CRUD para gestionar productos.</p>
+</body>
+</html>
+

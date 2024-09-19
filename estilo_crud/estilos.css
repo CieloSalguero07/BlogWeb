@@ -1,0 +1,48 @@
+/*p*/
+.contenido{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ede8e7;
+}
+
+/*fondo*/
+body{
+    background-color: #f3d5ac;
+}
+
+/*h2*/
+.subtitulos{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*menu*/
+nav{
+    background-color: #e7e2db;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+
+}
+
