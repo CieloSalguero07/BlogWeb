@@ -4,6 +4,7 @@
     <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Formulario de Contacto</title> <!-- Título -->
     <link rel="stylesheet" href="css_formulario/formulario.css"> <!-- Enlace a un archivo CSS externo para darle estilo a la página -->
+    <script src="validacion_js/validaciones.js" defer></script> <!-- Enlace a la hoja de JavaScript -->
 </head>
 <body>
      <!--menu-->
@@ -22,57 +23,56 @@
   <!--fin menu-->
 
   <br>
-    <h1>FORMULARIO DE CONTACTO</h1> <!-- Encabezado principal de la página -->
+   <!-- inicio del formulario -->
+   <h1>FORMULARIO DE CONTACTO</h1>
 
-    <!-- inicio del formulario -->
-    <form action="#" method="post"> 
-        <!-- campo para ingresar el nombre -->
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+   <form id="contact-form"> 
+              <!-- campo para ingresar el nombre -->
+       <label for="nombre">Nombre:</label><br>
+       <input type="text" id="nombre" name="nombre" required><br><br>
+       
+       <!-- campo para ingresar los apellidos -->
+       <label for="apellidos">Apellidos:</label><br>
+       <input type="text" id="apellidos" name="apellidos" required><br><br>
 
-        <!-- campo para ingresar los apellidos -->
-        <label for="apellidos">Apellidos:</label><br>
-        <input type="text" id="apellidos" name="apellidos" required><br><br>
-
-        <!-- menú desplegable para seleccionar el tipo de mensaje -->
-        <label for="tipo">Tipo de Mensaje:</label><br>
-        <select id="tipo" name="tipo" required>
-            <option value="queja">Queja</option>
-            <option value="sugerencia">Sugerencia</option>
-            <option value="felicitacion">Felicitación</option>
-        </select><br><br>
+       <!-- menú desplegable para seleccionar el tipo de mensaje -->
+       <label for="tipo">Tipo de Mensaje:</label><br>
+       <select id="tipo" name="tipo" required>
+           <option value="queja">Queja</option>
+           <option value="sugerencia">Sugerencia</option>
+           <option value="felicitacion">Felicitación</option>
+       </select><br><br>
 
         <!-- campo para ingresar el correo electrónico -->
-        <label for="email">Correo Electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+       <label for="email">Correo electrónico:</label>
+       <input type="email" id="email" name="email" required title="Se requiere un formato de correo electrónico válido"><br><br>
 
-        <!-- Campo para ingresar el número de teléfono -->
-        <label for="telefono">Teléfono Móvil:</label><br>
-        <input type="tel" id="telefono" name="telefono" required><br><br>
+       <!-- Campo para ingresar el número de teléfono -->
+       <label for="phone">Teléfono Móvil:</label><br>
+       <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Se requieren 10 dígitos"><br><br>
 
-        <!-- opciones de género con botones de radio -->
-        <label for="genero">Género:</label><br>
-        <input type="radio" id="masculino" name="genero" value="masculino" required>
-        <label for="masculino">Masculino</label><br>
-        <input type="radio" id="femenino" name="genero" value="femenino" required>
-        <label for="femenino">Femenino</label><br><br>
+       <!-- opciones de género con botones de radio -->
+       <label for="genero">Género:</label><br>
+       <input type="radio" id="masculino" name="genero" value="masculino" required>
+       <label for="masculino">Masculino</label><br>
+       <input type="radio" id="femenino" name="genero" value="femenino" required>
+       <label for="femenino">Femenino</label><br><br>
 
-        <!-- area de texto para escribir el mensaje -->
-        <label for="mensaje">Cuerpo del Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+       <!-- area de texto para escribir el mensaje -->
+       <label for="mensaje">Cuerpo del Mensaje:</label><br>
+       <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
 
-        <!-- casilla de verificación para aceptar la política de privacidad -->
-        <label>
-            <input type="checkbox" id="politica" name="politica" required>
-            Acepto la <a href="#">política de privacidad</a>.
-        </label><br><br>
+       <!-- casilla de verificación para aceptar la política de privacidad -->
+       <label>
+           <input type="checkbox" id="politica" name="politica" required>
+           Acepto la <a href="#">política de privacidad</a>.
+       </label><br><br>
 
-        <!-- aviso de confidencialidad del formulario -->
-        <p>Aviso de confidencialidad: La información proporcionada en este formulario será utilizada únicamente para responder a su consulta y será tratada de manera confidencial.</p>
-
-        <!-- botón de envío del formulario -->
-        <input type="submit" value="Enviar">
-    </form>
+       <!-- aviso de confidencialidad del formulario -->
+       <p>Aviso de confidencialidad: La información proporcionada en este formulario será utilizada únicamente para responder a su consulta y será tratada de manera confidencial.</p>
+       <!-- botón de envío del formulario -->
+       <input type="submit" value="Enviar">
+   </form>
 
 </body>
 </html>
